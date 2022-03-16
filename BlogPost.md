@@ -1047,4 +1047,4 @@ We have created a zero trust microservice project where each microservice has it
 * You can easily centralize them by implementing `IFeatureStore` and `ISettingStore` in the remoting module and redirecting them to the identity service.
 
 ## Source Code
-The sample source code is available [here](https://github.com/Trojaner/AbpZeroTrustAuthorization).
+The sample source code is available [here](https://github.com/Trojaner/AbpZeroTrustArchitecture).
