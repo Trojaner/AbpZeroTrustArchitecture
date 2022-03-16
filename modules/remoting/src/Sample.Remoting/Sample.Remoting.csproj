@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<RootNamespace>Sample.Remoting</RootNamespace>
+		<LangVersion>latest</LangVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="IdentityModel" Version="5.2.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+		<PackageReference Include="Volo.Abp.AspNetCore.Mvc.Contracts" Version="5.1.4" />
+		<PackageReference Include="Volo.Abp.Auditing" Version="5.1.4" />
+		<PackageReference Include="Volo.Abp.Authorization.Abstractions" Version="5.1.4" />
+		<PackageReference Include="Volo.Abp.ExceptionHandling" Version="5.1.4" />
+		<PackageReference Include="Volo.Abp.Http.Client" Version="5.1.4" />
+		<PackageReference Include="Volo.Abp.ObjectMapping" Version="5.1.4" />
+		<ProjectReference Include="..\..\..\..\services\Sample.Auditing\src\Sample.Auditing.Application.Contracts\Sample.Auditing.Application.Contracts.csproj" />
+		<ProjectReference Include="..\..\..\..\services\Sample.Identity\src\Sample.Identity.Application.Contracts\Sample.Identity.Application.Contracts.csproj" />
+	</ItemGroup>
+
+</Project>

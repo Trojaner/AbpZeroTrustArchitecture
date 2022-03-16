@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>Sample.Identity</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sample.Identity.Domain\Sample.Identity.Domain.csproj" />
+    <ProjectReference Include="..\Sample.Identity.Application.Contracts\Sample.Identity.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Account.Application" Version="5.1.4" />
+    <PackageReference Include="Volo.Abp.Identity.Application" Version="5.1.4" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="5.1.4" />
+    <PackageReference Include="Volo.Abp.TenantManagement.Application" Version="5.1.4" />
+  </ItemGroup>
+
+</Project>
