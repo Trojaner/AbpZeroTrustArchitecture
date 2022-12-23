@@ -1038,7 +1038,7 @@ We have created a zero trust microservice project where each microservice has it
 
 ### Caveats
 * **Lot's of dependencies**: The identity service will have a dependency to all application contracts layers. You will have to recompile and redeploy the identity service every time a new microservice or permission is added. Otherwise, the permissions will not be registered and an exception will be thrown on permission check. 
-	* You could integrate service auto-discovery in combination with the [Abp.DynamicPermissions](https://github.com/EasyAbp/Abp.DynamicPermission) library to fix this issue (e.g. by providing an API that lists all permission definitions in each service).
+	* UPDATE: This is no longer required and solved with [ABP Framework 7](https://blog.abp.io/abp/ABP.IO-Platform-7.0-RC-Has-Been-Published).
 * **Difficult debugging**: On missing permissions, the remote exception is not forwarded correctly. You will only see a generic authorization exception but not which permission is missing. 
 	* This issue could be fixed by forwarding these exceptions correctly.
 * **A new single point of failure**: if the identity service goes down, nothing will work as authorization will not be possible.
